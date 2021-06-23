@@ -10,8 +10,6 @@ setuptools.setup(
   url = 'https://github.com/serato/web-sws-py-bootstrap',
   python_requires='>=3.6',
   install_requires=[
-    'requests',
-    'requests-mock',
     'pytest'
   ]
 )
