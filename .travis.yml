@@ -6,8 +6,6 @@ install:
   # Install dependencies from Pipfile
   - pipenv install
 script:
-  # Run flake8 Code Sniffer
-  - flake8 web_sws_py_bootstrap
   # Run tests
   - pipenv run python -m pytest tests/spec
   - pipenv run flake8 web_sws_py_bootstrap
