@@ -4,11 +4,15 @@ python:
 
 install:
   - pipenv install
+  # Install Code Sniffer
   - pip install flake8
 script:
-  - python -m pytest
+  # Run Code Sniffer
   - flake8 web_sws_py_bootstrap
+  # Run tests
+  - python -m pytest
 
+# Will only trigger builds for the master branch as well as branches with an opened pull requests.
 branches:
   only:
     - master
