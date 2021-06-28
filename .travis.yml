@@ -4,9 +4,10 @@ python:
 
 install:
   - pipenv install
-
+  - pip install flake8
 script:
   - python -m pytest
+  - flake8 web_sws_py_bootstrap
 
 branches:
   only:
