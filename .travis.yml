@@ -3,14 +3,14 @@ python:
   - "3.7"
 
 install:
+  # Install dependencies from Pipfile
   - pipenv install
-  # Install Code Sniffer
-  - pip install flake8
 script:
-  # Run Code Sniffer
+  # Run flake8 Code Sniffer
   - flake8 web_sws_py_bootstrap
   # Run tests
-  - python -m pytest
+  - pipenv run python -m pytest tests/spec
+  - pipenv run flake8 web_sws_py_bootstrap
 
 # Will only trigger builds for the master branch as well as branches with an opened pull requests.
 branches:

@@ -5,6 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 pytest = "~=6.2.4"
+flake8 = "~=3.9.2"
 
 [requires]
 python_version = "3.7"
