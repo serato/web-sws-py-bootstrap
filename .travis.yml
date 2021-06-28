@@ -6,9 +6,10 @@ install:
   # Install dependencies from Pipfile
   - pipenv install
 script:
+  # Run Code Sniffer
+  - pipenv run flake8 web_sws_py_bootstrap
   # Run tests
   - pipenv run python -m pytest tests/spec
-  - pipenv run flake8 web_sws_py_bootstrap
 
 # Will only trigger builds for the master branch as well as branches with an opened pull requests.
 branches:
