@@ -11,7 +11,7 @@ I recommend using `Pipenv` for this project.
 pipenv install -e "git+https://${TOKEN}@github.com/serato/web-sws-py-bootstrap.git@master#egg=web-sws-py-bootstrap"
 ```
 
-Please contact Eru Goodwin or Andrii Osmak to get the token.
+To get the token, search for "Access token to some private repositories on GitHub" on Passpack.
 
 
 ### Running tests
