@@ -7,7 +7,7 @@ install:
   - pipenv install --dev
 script:
   # Run Code Sniffer
-  - pipenv run flake8 web_sws_py_bootstrap
+  - pycodestyle web_sws_py_bootstrap --config=./pycodestyle
   # Run tests
   - pipenv run python -m pytest tests/spec
 

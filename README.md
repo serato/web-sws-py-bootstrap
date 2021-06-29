@@ -19,6 +19,7 @@ Please contact Eru Goodwin or Andrii Osmak to get the token.
 Run the tests with:
 
 ```
+pipenv install --dev
 pipenv run python -m pytest
 ```
 
