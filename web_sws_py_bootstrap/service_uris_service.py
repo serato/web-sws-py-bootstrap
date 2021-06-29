@@ -2,6 +2,7 @@ import os
 import re
 import json
 
+
 class ServiceUrisService():
     NON_TEST_ENVS = [
         'dev',
@@ -27,6 +28,6 @@ class ServiceUrisService():
         result = {}
         testUris = variables['test']
         for key, value in testUris.items():
-              result[key] = value.replace(":test_env", self.environment)
+            result[key] = value.replace(":test_env", self.environment)
 
         return result
