@@ -7,6 +7,14 @@
     "da":"http://192.168.4.14:8383",
     "notifications":"http://192.168.4.14:8484"
   },
+  "dev2": {
+    "id":"http://localhost:8300",
+    "license":"http://localhost:8301",
+    "profile":"http://localhost:8305",
+    "ecom":"http://localhost:8302",
+    "da":"http://localhost:8304",
+    "notifications":"http://localhost:8303"
+  },
   "test": {
     "id": "https://:test_env-id.serato.net",
     "license": "https://:test_env-license.serato.net",
