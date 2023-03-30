@@ -2,7 +2,7 @@ import setuptools
 setuptools.setup(
   name = 'web-sws-py-bootstrap',
   packages = ['web_sws_py_bootstrap'],
-  version = '1.0.1',
+  version = '1.1.0',
   license='MIT',
   description = 'Here we store all the common functionality that we use across our services.',
   author = 'Andrii Osmak',

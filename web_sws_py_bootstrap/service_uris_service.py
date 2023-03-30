@@ -6,6 +6,7 @@ import json
 class ServiceUrisService():
     NON_TEST_ENVS = [
         'dev',
+        'dev2',
         'staging',
         'preprod'
     ]
