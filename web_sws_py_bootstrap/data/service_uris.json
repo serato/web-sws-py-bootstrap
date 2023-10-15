@@ -27,7 +27,7 @@
     "id":"https://id.serato.xyz",
     "license":"https://license.serato.xyz",
     "profile":"https://profile.serato.xyz",
-    "ecom":"https://profile.serato.xyz",
+    "ecom":"https://ecom.serato.xyz",
     "da":"https://da.serato.xyz",
     "notifications":"https://notifications.serato.xyz"
   },
@@ -35,7 +35,7 @@
     "id":"https://id.serato.biz",
     "license":"https://license.serato.biz",
     "profile":"https://profile.serato.biz",
-    "ecom":"https://profile.serato.biz",
+    "ecom":"https://ecom.serato.biz",
     "da":"https://da.serato.biz",
     "notifications":"https://notifications.serato.biz"
   }
