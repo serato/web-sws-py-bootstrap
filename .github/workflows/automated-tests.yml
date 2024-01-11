@@ -1,4 +1,4 @@
-name: Test web-sws-py-bootstrap
+name: Automated tests and static code analyzers
 
 on:
   pull_request:
