@@ -54,3 +54,6 @@ def get_uri_data(environment):
     json_file.close()
 
     return uris[environment]
+
+def test():
+    return 0
