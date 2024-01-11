@@ -1,0 +1,31 @@
+name: Test web-sws-py-bootstrap
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Set python environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.7'
+          cache: 'pipenv'
+
+      - name: Install pycodestyle, pipenv and dependencies
+        run: |
+          pip install pycodestyle
+          curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
+          pipenv install --dev
+
+      - name: Run tests
+        run: |
+          pycodestyle web_sws_py_bootstrap --config=./pycodestyle
+          pipenv run python -m pytest tests/spec
